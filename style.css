@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.game-box {
+    padding: 1.3rem;
+    width: 35rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#box {
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 4rem;
+    color: rgb(237, 129, 66);
+}
+
+
+#box:hover {
+    background-color: rgb(245, 225, 213);
+}
+
+#box:active, .btn:active {
+    transform: scale(1.04);
+}
+
+h1 {
+    color: rgb(236, 135, 77);
+    text-align: center;
+
+}
+
+.btn{
+    padding: .5em 1.5em;
+    border: 2px solid rgb(225, 170, 146);
+    color: rgb(237, 129, 66);
+    border-radius: 8px;
+    font-size: 1.6rem;
+    background-color: transparent;
+    cursor: pointer;
+    margin-inline: 1rem;
+}
+
+
+#winner-heading{
+    display: none;
+    color: purple
+}
+
+
+#winner-heading.active{
+    display: block;
+}
